@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45936A641FADD4CB0066EF2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45936A631FADD4CB0066EF2C /* AppDelegate.swift */; };
+		45936A661FADD4CB0066EF2C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45936A651FADD4CB0066EF2C /* FirstViewController.swift */; };
+		45936A681FADD4CB0066EF2C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45936A671FADD4CB0066EF2C /* SecondViewController.swift */; };
+		45936A6B1FADD4CB0066EF2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45936A691FADD4CB0066EF2C /* Main.storyboard */; };
+		45936A6D1FADD4CB0066EF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45936A6C1FADD4CB0066EF2C /* Assets.xcassets */; };
+		45936A701FADD4CB0066EF2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45936A6E1FADD4CB0066EF2C /* LaunchScreen.storyboard */; };
+		45936A7B1FADD4CB0066EF2C /* KisiBeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45936A7A1FADD4CB0066EF2C /* KisiBeaconTests.swift */; };
+		45936A861FADD4CC0066EF2C /* KisiBeaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45936A851FADD4CC0066EF2C /* KisiBeaconUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45936A771FADD4CB0066EF2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45936A581FADD4CB0066EF2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45936A5F1FADD4CB0066EF2C;
+			remoteInfo = KisiBeacon;
+		};
+		45936A821FADD4CC0066EF2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45936A581FADD4CB0066EF2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45936A5F1FADD4CB0066EF2C;
+			remoteInfo = KisiBeacon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45936A601FADD4CB0066EF2C /* KisiBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KisiBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45936A631FADD4CB0066EF2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45936A651FADD4CB0066EF2C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		45936A671FADD4CB0066EF2C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		45936A6A1FADD4CB0066EF2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45936A6C1FADD4CB0066EF2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45936A6F1FADD4CB0066EF2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45936A711FADD4CB0066EF2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45936A761FADD4CB0066EF2C /* KisiBeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KisiBeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45936A7A1FADD4CB0066EF2C /* KisiBeaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiBeaconTests.swift; sourceTree = "<group>"; };
+		45936A7C1FADD4CC0066EF2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45936A811FADD4CC0066EF2C /* KisiBeaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KisiBeaconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45936A851FADD4CC0066EF2C /* KisiBeaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiBeaconUITests.swift; sourceTree = "<group>"; };
+		45936A871FADD4CC0066EF2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45936A5D1FADD4CB0066EF2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45936A731FADD4CB0066EF2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45936A7E1FADD4CC0066EF2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45936A571FADD4CB0066EF2C = {
+			isa = PBXGroup;
+			children = (
+				45936A621FADD4CB0066EF2C /* KisiBeacon */,
+				45936A791FADD4CB0066EF2C /* KisiBeaconTests */,
+				45936A841FADD4CC0066EF2C /* KisiBeaconUITests */,
+				45936A611FADD4CB0066EF2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45936A611FADD4CB0066EF2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45936A601FADD4CB0066EF2C /* KisiBeacon.app */,
+				45936A761FADD4CB0066EF2C /* KisiBeaconTests.xctest */,
+				45936A811FADD4CC0066EF2C /* KisiBeaconUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45936A621FADD4CB0066EF2C /* KisiBeacon */ = {
+			isa = PBXGroup;
+			children = (
+				45936A631FADD4CB0066EF2C /* AppDelegate.swift */,
+				45936A651FADD4CB0066EF2C /* FirstViewController.swift */,
+				45936A671FADD4CB0066EF2C /* SecondViewController.swift */,
+				45936A691FADD4CB0066EF2C /* Main.storyboard */,
+				45936A6C1FADD4CB0066EF2C /* Assets.xcassets */,
+				45936A6E1FADD4CB0066EF2C /* LaunchScreen.storyboard */,
+				45936A711FADD4CB0066EF2C /* Info.plist */,
+			);
+			path = KisiBeacon;
+			sourceTree = "<group>";
+		};
+		45936A791FADD4CB0066EF2C /* KisiBeaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				45936A7A1FADD4CB0066EF2C /* KisiBeaconTests.swift */,
+				45936A7C1FADD4CC0066EF2C /* Info.plist */,
+			);
+			path = KisiBeaconTests;
+			sourceTree = "<group>";
+		};
+		45936A841FADD4CC0066EF2C /* KisiBeaconUITests */ = {
+			isa = PBXGroup;
+			children = (
+				45936A851FADD4CC0066EF2C /* KisiBeaconUITests.swift */,
+				45936A871FADD4CC0066EF2C /* Info.plist */,
+			);
+			path = KisiBeaconUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45936A5F1FADD4CB0066EF2C /* KisiBeacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45936A8A1FADD4CC0066EF2C /* Build configuration list for PBXNativeTarget "KisiBeacon" */;
+			buildPhases = (
+				45936A5C1FADD4CB0066EF2C /* Sources */,
+				45936A5D1FADD4CB0066EF2C /* Frameworks */,
+				45936A5E1FADD4CB0066EF2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KisiBeacon;
+			productName = KisiBeacon;
+			productReference = 45936A601FADD4CB0066EF2C /* KisiBeacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45936A751FADD4CB0066EF2C /* KisiBeaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45936A8D1FADD4CC0066EF2C /* Build configuration list for PBXNativeTarget "KisiBeaconTests" */;
+			buildPhases = (
+				45936A721FADD4CB0066EF2C /* Sources */,
+				45936A731FADD4CB0066EF2C /* Frameworks */,
+				45936A741FADD4CB0066EF2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45936A781FADD4CB0066EF2C /* PBXTargetDependency */,
+			);
+			name = KisiBeaconTests;
+			productName = KisiBeaconTests;
+			productReference = 45936A761FADD4CB0066EF2C /* KisiBeaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		45936A801FADD4CC0066EF2C /* KisiBeaconUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45936A901FADD4CC0066EF2C /* Build configuration list for PBXNativeTarget "KisiBeaconUITests" */;
+			buildPhases = (
+				45936A7D1FADD4CC0066EF2C /* Sources */,
+				45936A7E1FADD4CC0066EF2C /* Frameworks */,
+				45936A7F1FADD4CC0066EF2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45936A831FADD4CC0066EF2C /* PBXTargetDependency */,
+			);
+			name = KisiBeaconUITests;
+			productName = KisiBeaconUITests;
+			productReference = 45936A811FADD4CC0066EF2C /* KisiBeaconUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45936A581FADD4CB0066EF2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Suyash Taneja";
+				TargetAttributes = {
+					45936A5F1FADD4CB0066EF2C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					45936A751FADD4CB0066EF2C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 45936A5F1FADD4CB0066EF2C;
+					};
+					45936A801FADD4CC0066EF2C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 45936A5F1FADD4CB0066EF2C;
+					};
+				};
+			};
+			buildConfigurationList = 45936A5B1FADD4CB0066EF2C /* Build configuration list for PBXProject "KisiBeacon" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45936A571FADD4CB0066EF2C;
+			productRefGroup = 45936A611FADD4CB0066EF2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45936A5F1FADD4CB0066EF2C /* KisiBeacon */,
+				45936A751FADD4CB0066EF2C /* KisiBeaconTests */,
+				45936A801FADD4CC0066EF2C /* KisiBeaconUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45936A5E1FADD4CB0066EF2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45936A701FADD4CB0066EF2C /* LaunchScreen.storyboard in Resources */,
+				45936A6D1FADD4CB0066EF2C /* Assets.xcassets in Resources */,
+				45936A6B1FADD4CB0066EF2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45936A741FADD4CB0066EF2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45936A7F1FADD4CC0066EF2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45936A5C1FADD4CB0066EF2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45936A681FADD4CB0066EF2C /* SecondViewController.swift in Sources */,
+				45936A641FADD4CB0066EF2C /* AppDelegate.swift in Sources */,
+				45936A661FADD4CB0066EF2C /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45936A721FADD4CB0066EF2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45936A7B1FADD4CB0066EF2C /* KisiBeaconTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45936A7D1FADD4CC0066EF2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45936A861FADD4CC0066EF2C /* KisiBeaconUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45936A781FADD4CB0066EF2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45936A5F1FADD4CB0066EF2C /* KisiBeacon */;
+			targetProxy = 45936A771FADD4CB0066EF2C /* PBXContainerItemProxy */;
+		};
+		45936A831FADD4CC0066EF2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45936A5F1FADD4CB0066EF2C /* KisiBeacon */;
+			targetProxy = 45936A821FADD4CC0066EF2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45936A691FADD4CB0066EF2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45936A6A1FADD4CB0066EF2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45936A6E1FADD4CB0066EF2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45936A6F1FADD4CB0066EF2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45936A881FADD4CC0066EF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45936A891FADD4CC0066EF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45936A8B1FADD4CC0066EF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7HYPNGZV6;
+				INFOPLIST_FILE = KisiBeacon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qa.kisi.KisiBeacon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45936A8C1FADD4CC0066EF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7HYPNGZV6;
+				INFOPLIST_FILE = KisiBeacon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qa.kisi.KisiBeacon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		45936A8E1FADD4CC0066EF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7HYPNGZV6;
+				INFOPLIST_FILE = KisiBeaconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qa.kisi.KisiBeaconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KisiBeacon.app/KisiBeacon";
+			};
+			name = Debug;
+		};
+		45936A8F1FADD4CC0066EF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7HYPNGZV6;
+				INFOPLIST_FILE = KisiBeaconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qa.kisi.KisiBeaconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KisiBeacon.app/KisiBeacon";
+			};
+			name = Release;
+		};
+		45936A911FADD4CC0066EF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7HYPNGZV6;
+				INFOPLIST_FILE = KisiBeaconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qa.kisi.KisiBeaconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KisiBeacon;
+			};
+			name = Debug;
+		};
+		45936A921FADD4CC0066EF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7HYPNGZV6;
+				INFOPLIST_FILE = KisiBeaconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qa.kisi.KisiBeaconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KisiBeacon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45936A5B1FADD4CB0066EF2C /* Build configuration list for PBXProject "KisiBeacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45936A881FADD4CC0066EF2C /* Debug */,
+				45936A891FADD4CC0066EF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45936A8A1FADD4CC0066EF2C /* Build configuration list for PBXNativeTarget "KisiBeacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45936A8B1FADD4CC0066EF2C /* Debug */,
+				45936A8C1FADD4CC0066EF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45936A8D1FADD4CC0066EF2C /* Build configuration list for PBXNativeTarget "KisiBeaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45936A8E1FADD4CC0066EF2C /* Debug */,
+				45936A8F1FADD4CC0066EF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45936A901FADD4CC0066EF2C /* Build configuration list for PBXNativeTarget "KisiBeaconUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45936A911FADD4CC0066EF2C /* Debug */,
+				45936A921FADD4CC0066EF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45936A581FADD4CB0066EF2C /* Project object */;
+}
