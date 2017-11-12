@@ -15,14 +15,14 @@ import UIKit
         static let smallRoundedRectangleWidth: CGFloat = 60.0
         static let smallRoundedRectangleHeight: CGFloat = 20.0
         static let smallCircleRadius: CGFloat = 15.0
-        static let handleRotationAngle: CGFloat = 0.85
+        static let handleRotationAngle: CGFloat = CGFloat.pi * 0.25
     }
     
+    // Four Layers are used to draw the shape
     var squareLayer = CAShapeLayer()
     var semiCircleLayer = CAShapeLayer()
     var smallRoundedRectangleLayer = CAShapeLayer()
     var circleLayer = CAShapeLayer()
-    let circleRadius = 5.0
     
     private var isCurrentlyAnimating: Bool = false
 
@@ -50,12 +50,12 @@ import UIKit
         let translationAnimation = CAKeyframeAnimation(keyPath: "transform.translation.x")
         translationAnimation.values = [30.0, 20.0, 10.0, 5.0, 1.0, 0]
         translationAnimation.keyTimes = [0, 0.2, 0.4, 0.9, 0.92, 1.0]
-        translationAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)]
+        translationAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)]
         
         let scaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale.x")
-        scaleAnimation.values =     [1, 1.1, 1.2, 1, 0.95, 0.9, 1.1, 1.15, 1.0]
-        scaleAnimation.keyTimes = [0, 0.1, 0.4, 0.7, 0.94, 0.95, 0.96, 0.98, 1.0]
-        scaleAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)]
+        scaleAnimation.values =   [1, 1.1, 1.2, 1, 0.95, 0.9, 1.0]
+        scaleAnimation.keyTimes = [0, 0.1, 0.2, 0.9, 0.94, 0.98, 1.0]
+        scaleAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)]
         
         let fadeAnimation = CAKeyframeAnimation(keyPath: "fillColor")
         fadeAnimation.values = [UIColor.white.cgColor, UIColor.white.cgColor, UIColor.redBackgroundColor.cgColor]
@@ -76,7 +76,7 @@ import UIKit
     private func animateSemiCircleUnlockAndLock() {
         let springHandleAnimation = CASpringAnimation(keyPath: "transform.rotation")
         springHandleAnimation.fromValue = 0
-        springHandleAnimation.byValue = CGFloat.pi * 0.25
+        springHandleAnimation.byValue = Constants.handleRotationAngle
         springHandleAnimation.duration = 1.5
         springHandleAnimation.damping = 4
         springHandleAnimation.mass = 0.5
@@ -84,16 +84,16 @@ import UIKit
         springHandleAnimation.isRemovedOnCompletion = false
         
         let springHandleAnimationLock = CABasicAnimation(keyPath: "transform.rotation")
-        springHandleAnimationLock.fromValue = CGFloat.pi * 0.25
+        springHandleAnimationLock.fromValue = Constants.handleRotationAngle
         springHandleAnimationLock.toValue = 0
         springHandleAnimationLock.duration = 0.2
         springHandleAnimationLock.fillMode = kCAFillModeForwards
         springHandleAnimationLock.isRemovedOnCompletion = false
-        springHandleAnimationLock.beginTime = 1.9
+        springHandleAnimationLock.beginTime = 2.0
         
         let groupAnimation = CAAnimationGroup()
         groupAnimation.animations = [springHandleAnimation, springHandleAnimationLock]
-        groupAnimation.duration = 2.1
+        groupAnimation.duration = 2.2
         groupAnimation.beginTime = CACurrentMediaTime() + 0.6
         semiCircleLayer.add(groupAnimation, forKey: "handleRotationAnimation")
     }
@@ -105,7 +105,7 @@ import UIKit
         translationAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)]
         
         let scaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale.x")
-        scaleAnimation.values =     [1, 1.10, 1.20, 1.25, 1.0, 0.85, 0.8, 0.9, 1.0]
+        scaleAnimation.values =     [1, 1.10, 1.20, 1.25, 1.0, 0.9, 0.85, 0.9, 1.0]
         scaleAnimation.keyTimes =   [0, 0.1, 0.2, 0.7, 0.85, 0.90, 0.96, 0.98, 1.0]
         scaleAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)]
         
