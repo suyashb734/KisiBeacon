@@ -41,13 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
         
-//        let storyboard = UIStoryboard(name: "LaunchScreen", bundle: nil)
-//        let viewController = storyboard.instantiateViewController(withIdentifier: "LaunchScreen")
-//        window?.rootViewController?.present(viewController, animated: false, completion: nil)
-//
-//        Timer.scheduledTimer(withTimeInterval: 4.5, repeats: false, block: { (timer) in
-//            viewController.dismiss(animated: false, completion: nil)
-//        })
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

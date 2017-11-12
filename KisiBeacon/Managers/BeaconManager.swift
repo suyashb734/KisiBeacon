@@ -47,18 +47,6 @@ class BeaconManager: NSObject {
 }
 
 extension BeaconManager: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        
-    }
-    
-    func locationManager(_ manager: CLLocationManager, monitoringDidFailFor region: CLRegion?, withError error: Error) {
-        
-    }
-    
-    func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
-        
-    }
-    
     func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager) {
         startMonitoring()
     }
